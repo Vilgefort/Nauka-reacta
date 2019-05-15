@@ -36,13 +36,6 @@ class Creator extends React.Component {
     }
   }
 
-<<<<<<< HEAD
-  handleCancel(){
-    this.setState({
-      value: '',
-      visibleButtons: false,
-    });
-=======
   handleCancel() {
     if (window.confirm('Do you really want to leave?') == true) {
       this.setState({
@@ -50,7 +43,6 @@ class Creator extends React.Component {
         visibleButtons: false,
       });
     }
->>>>>>> a2ccdb49b50961106a5391e1da2066aebc5c47c2
   }
 
   render() {
