@@ -17,7 +17,7 @@ class Column extends React.Component {
     icon: settings.defaultColumnIcon,
   };
   render() {
-    const {title, icon, cards, addCard} = this.props;
+    const { title, icon, cards, addCard } = this.props;
     return (
       <section className={styles.component}>
         <h3 className={styles.title}>
@@ -26,8 +26,10 @@ class Column extends React.Component {
             <Icon name={icon} />
           </span>
         </h3>
+
         <div className={styles.cards}>{cards.map(cardData => (<Card key={cardData.id} {...cardData} />))}
         </div>
+
         <div className={styles.creator}>
           <Creator
             text={settings.cardCreatorText}
